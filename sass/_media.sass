@@ -64,7 +64,6 @@
       margin-right: 0
     &-primary
       margin-top: 30px
-      width: 100%
 @media (max-width: 766px)
   .container
     max-width: 700px
@@ -80,17 +79,23 @@
         right: 0
         left: 0
         z-index: 99
+    &-menu
+      display: none
+      &--visible
+        display: block
+        position: fixed
+        left: -60px
+        right: 0
+        bottom: 0
+        top: 68px
     &-top
       min-height: 50px
     &-menu
-      margin-left: 160px
-      &__link
-        display: none
-    &__button
-      display: none
-    &__link
-      margin-top: 8px
-      font-size: 12px
+      flex-direction: column
+      &__item
+        flex-direction: column
+        text-align: center
+        margin-bottom: 20px
   .menu
     &-button
       display: flex
@@ -138,11 +143,10 @@
       margin-right: 0
     &-primary
       margin-top: 25px
-      width: 100%
 @media (max-width: 520px)
   .container
     max-width: 320px
-    width: 88%
+    width: 94%
   .navbar
     padding-bottom: 10px
     &-menu
@@ -153,40 +157,58 @@
       width: 118px
       height: 35px
     &__link
-      margin-top: 8px
-      font-size: 12px
+      margin-left: 20px
+      margin-top: -30px
+      font-size: 15px
+  .book
+    &-info
+      flex-direction: column
   .about
     &-text
+      width: 290px
       margin-right: 10px
       margin-top: -60px
+      text-align: center
     &-book
-      width: 200px
-      padding: 10px 10px
+      width: 295px
+      padding: 50px 70px
+      margin-top: 40px
     &-image
-      width: 140px
+      width: 160px
       height: 244px
+      box-shadow: 0px 10px 35px 0px
     &-title
-      font-size: 14px
-      margin-bottom: -17px
+      font-size: 35px
     &-psycholigy
       margin-top: 10px
-      font-size: 14px
-      line-height: 15px
+      font-size: 35px
+      line-height: 30px
     &-subtitle
-      font-size: 7px
-      margin-top: 5px
-      margin-bottom: -10px
+      font-size: 15px
+      margin-top: 20px
+      margin-bottom: 20px
     &-info
-      font-size: 5px
+      font-size: 14px
       line-height: 0
   .button
-    margin-top: 12px
+    display: flex
+    flex-direction: column
+    margin-top: 25px
     &-outline
-      padding: 7px 26px 7px 27px
-      font-size: 6px
+      margin-left: 70px
+      width: 150px
+      height: 30px
+      padding-top: 0
+      padding-left: 10px
+      padding-right: 10px
+      font-size: 14px
       margin-right: 0
     &-primary
-      padding: 2px 14px 2px 14px
-      font-size: 8px
-      margin-top: 8px
-      width: 100%
+      margin-left: 70px
+      width: 150px
+      height: 30px
+      padding-top: 3px
+      padding-left: 10px
+      padding-right: 10px
+      margin-top: 10px
+      font-size: 16px
