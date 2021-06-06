@@ -65,8 +65,8 @@
     line-height: 22px
   &-book
     display: flex
-    width: 358px
-    height: 260px
+    max-width: 358px
+    min-height: 260px
     padding: 11px 26px 11px 11px
     margin-right: 32px
     margin-bottom: 32px
@@ -186,19 +186,22 @@
   margin-bottom: 60px
 
 .swiper
-  position: relative
   &-slide
     display: flex
+  &-container
+    position: relative
+    width: 1240px
+    margin-left: 190px
 .slider
+  margin-top: -2px
   &-block
     width: 265px
     height: 240px
-    padding: 40px 34px 30px 23px
+    padding: 40px 15px 30px 13px
     border: 1px solid $line
     border-radius: 8px
     text-align: center
-    margin-right: 20px
-    margin-left: 13px
+    margin-right: 28px
   &-icon
     width: 64px
     height: 64px
@@ -234,8 +237,8 @@
     background-repeat: no-repeat
     background-color: transparent
     &--next
-      right: 5px
+      right: 85px
       background-image: url(../img/next-1.svg)
     &--prev
-      left: -25px
-      background-image: url(../img/prev-1.svg)
+      left: -50px
+      background-image: url(../img/next-1.svg)
