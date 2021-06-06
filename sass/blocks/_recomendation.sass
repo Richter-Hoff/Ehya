@@ -1,4 +1,5 @@
 .recomendation
+  padding-bottom: 98px
   &-wrapper
     display: grid
     grid-template-columns: repeat(3, minmax(min-content, 1fr))
@@ -183,3 +184,58 @@
   border: 1px solid $line
   margin-top: 55px
   margin-bottom: 60px
+
+.swiper
+  position: relative
+  &-slide
+    display: flex
+.slider
+  &-block
+    width: 265px
+    height: 240px
+    padding: 40px 34px 30px 23px
+    border: 1px solid $line
+    border-radius: 8px
+    text-align: center
+    margin-right: 20px
+    margin-left: 13px
+  &-icon
+    width: 64px
+    height: 64px
+  &-title
+    margin-top: 38px
+    margin-bottom: 12px
+    white-space: nowrap
+    color: $blue
+    font-family: Roboto
+    font-size: 22px
+    font-style: normal
+    font-weight: 500
+    line-height: 32px
+  &-text
+    color: $text-color
+    font-family: Open Sans
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 22px
+    letter-spacing: 0px
+    text-align: center
+  &-button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 99
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    border: none
+    cursor: pointer
+    background-repeat: no-repeat
+    background-color: transparent
+    &--next
+      right: 5px
+      background-image: url(../img/next-1.svg)
+    &--prev
+      left: -25px
+      background-image: url(../img/prev-1.svg)
