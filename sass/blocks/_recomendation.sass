@@ -20,6 +20,7 @@
 .card
   grid-column: span 2
   &-title
+    width: 159px
     margin-top: 12px
     font-family: Roboto
     font-size: 22px
@@ -104,10 +105,12 @@
   &__card
     display: flex
     align-items: start
-    padding: 24px
+    margin-bottom: 32px
     &-block
+      padding: 24px
       border-radius: 8px
-      height: 1020px
+      height: 940px
+      max-width: 360px
       background-color: rgba(0,0,0,0.1)
   &-image
     border-radius: 8px
@@ -123,12 +126,13 @@
     line-height: 40px
     color: $blue
   &-line
-    width: 312px
-    margin-left: 24px
+    width: 300px
     border: 1px solid $line
     margin-top: 18px
-    margin-bottom: 27px
+    margin-bottom: 13px
   &-title
+    width: 200px
+    margin-top: 10px
     font-family: Roboto
     font-size: 22px
     font-style: normal
@@ -160,7 +164,7 @@
     text-align: center
 .favorites
   &-link
-    margin-left: 35%
+    margin-left: 32%
     text-decoration: none
     text-transform: uppercase
     color: $button
@@ -172,5 +176,5 @@
 .line
   width: 1140px
   border: 1px solid $line
-  margin-top: 79px
+  margin-top: 55px
   margin-bottom: 60px
