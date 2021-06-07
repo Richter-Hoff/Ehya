@@ -24,32 +24,14 @@
       padding: 17px 25px 17px 25px
     &-primary
       padding: 17px 40px 17px 40px
-  .recomendation
-    &-wrapper
-      grid-template-columns: repeat(2, minmax(min-content, 1fr))
-      grid-template-rows: repeat(1, minmax(min-content, 1fr))
-    &-title
-      margin-left: 50px
-  .card
-    &-book
-      margin-left: 50px
-      margin-right: 170px
-    &-booking
-      display: none
-  .top
-    grid-column: 2
-    grid-row: 1
-  .more
-    margin-left: 20px
-    margin-top: -220px
-    width: 500px
+
 @media (max-width: 992px)
   .container
     max-width: 760px
   .navbar
     padding-bottom: 30px
     &-menu
-      margin-left: 240px
+      margin-left: 135px
     &__button
       width: 128px
       height: 40px
@@ -84,25 +66,8 @@
     &-primary
       margin-top: 30px
       padding: 17px 79px 17px 80px
-  .recomendation
-    &-wrapper
-      grid-template-columns: repeat(2, minmax(min-content, 1fr))
-      grid-template-rows: repeat(1, minmax(min-content, 1fr))
-    &-title
-  .card
-    &-book
-      margin-right: 50px
-      margin-left: 0
-    &-booking
-      display: none
-  .top
-    grid-column: 2
-    grid-row: 1
-  .more
-    margin-left: 0
-    margin-top: -220px
-    width: 370px
-@media (max-width: 766px)
+
+@media (max-width: 776px)
   .container
     max-width: 700px
     width: 92%
@@ -177,7 +142,7 @@
     display: flex
     flex-wrap: wrap
     width: 100%
-    margin-top: 10px
+    margin-top: 40px
     &-outline
       width: 200px
       padding-top: 8px
@@ -195,55 +160,6 @@
       text-align: center
       margin-top: 10px
       font-size: 10px
-  .recomendation
-    &-wrapper
-      grid-template-columns: repeat(2, minmax(min-content, 1fr))
-      grid-template-rows: repeat(1, minmax(min-content, 1fr))
-    &-title
-      font-size: 25px
-      margin-left: 0
-  .card
-    &-image
-      margin-right: 15px
-      width: 140px
-      height: 200px
-    &-title
-      font-size: 14px
-    &-text
-      font-size: 12px
-      margin-bottom: 5px
-    &-book
-      width: 320px
-      padding: 26px 15px 15px 15px
-      margin-right: 50px
-      margin-left: 0
-    &-booking
-      display: none
-    &-button
-      width: 80px
-      height: 30px
-      font-size: 12px
-  .top
-    grid-column: 2
-    grid-row: 1
-    &-headline
-      font-size: 25px
-    &-title
-      margin-top: 5px
-      width: 150px
-      font-size: 16px
-    &__card
-      &-block
-        padding: 14px
-        width: 310px
-    &-button
-      width: 80px
-      height: 30px
-      font-size: 12px
-  .more
-    margin-left: 0
-    margin-top: -220px
-    width: 320px
 
 @media (max-width: 520px)
   .container
@@ -263,6 +179,7 @@
       margin-top: -30px
       font-size: 15px
   .book
+    padding-bottom: 10px
     &-info
       flex-direction: column
   .about
@@ -292,25 +209,3 @@
     &-info
       font-size: 14px
       line-height: 0
-  .button
-    display: flex
-    flex-direction: column
-    margin-top: 25px
-    &-outline
-      margin-left: 70px
-      width: 150px
-      height: 30px
-      padding-top: 0
-      padding-left: 10px
-      padding-right: 10px
-      font-size: 14px
-      margin-right: 0
-    &-primary
-      margin-left: 70px
-      width: 150px
-      height: 30px
-      padding-top: 3px
-      padding-left: 10px
-      padding-right: 10px
-      margin-top: 10px
-      font-size: 16px
