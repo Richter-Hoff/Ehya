@@ -28,8 +28,8 @@ const swiper = new Swiper(".swiper-container", {
   },
 });
 
-var cardButtons = document.querySelector(".like");
-cardButtons.addEventListener("click", function () {
-  console.log("Клик по кнопке меню");
-  document.querySelector(".fa-heart").classList.toggle("likes");
+var liked = $("[data-toggle=favorites]");
+liked.on("click", function () {
+  console.log("Клик по кнопке избранное");
+  document.querySelector(".fas").classList.toggle("likes");
 });
