@@ -27,3 +27,9 @@ const swiper = new Swiper(".swiper-container", {
     el: ".swiper-scrollbar",
   },
 });
+
+var cardButtons = document.querySelector(".like");
+cardButtons.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document.querySelector(".fa-heart").classList.toggle("likes");
+});
