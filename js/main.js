@@ -6,7 +6,7 @@ menuButton.addEventListener("click", function () {
     .classList.toggle("navbar-menu--visible");
 });
 
-const swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper(".swiper-container ", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
