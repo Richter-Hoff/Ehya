@@ -5,893 +5,878 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ehya</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <div class="navbar navbar__mobile--fixed">
+    <header class="header header--mobile" id="header">
       <div class="container">
-        <div class="navbar-top">
-          <a href="index.html" class="logo">
-            <img src="img/Logo.svg" alt="Logo: ehya" class="logo__image" />
+        <div class="header-wrapper">
+          <a href="#">
+            <img src="img/logo.png" alt="Логотип: ehya" class="header__logo" />
           </a>
-          <div class="navbar-menu">
-            <ul class="navbar-menu__item">
-              <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Рекомендации</a>
-              </li>
-              <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Книги</a>
-              </li>
-              <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Блог</a>
-              </li>
-            </ul>
-            <a href="#" class="navbar__button">
-              <p class="navbar__link">Получить</p>
-            </a>
-          </div>
-
-          <button class="menu-button navbar-top__menu-button">
-            <span class="menu-button__line"></span
-            ><span class="menu-button__line"></span
-            ><span class="menu-button__line"></span>
-          </button>
-          <!-- /.navbar-top__menu-btn -->
-        </div>
-        <!-- /.navbar-top -->
-      </div>
-      <!-- /.container -->
-    </div>
-    <!-- /.navbar -->
-    <section class="book">
-      <div class="container">
-        <div class="book-info">
-          <div class="about-text">
-            <h1 class="about-title">Design Theory:</h1>
-            <span class="about-psycholigy"
-              >The Psychology of <br />
-              Graphic Design Pricing</span
-            >
-            <h4 class="about-subtitle">Книга Мишеля Янга</h4>
-            <span class="about-info"
-              >Спустя 15 лет я управляю собственной студией, выполнив тысячи
-              проектов для крупных клиентов. Теперь я делюсь своими золотыми
-              стратегиями ценообразования на творческую работу.</span
-            >
-            <div class="button">
-              <a href="#" class="button-outline">Купить сейчас</a>
-              <button class="button-primary">Читать демо</button>
-            </div>
-            <!-- /.buttons -->
-          </div>
-          <!-- /.about-text -->
-          <div class="about-book">
-            <img
-              src="img/Book-image.jpg"
-              alt="The psychology"
-              class="about-image"
-            />
-          </div>
-          <!-- /.about-book -->
-        </div>
-        <!-- /.book-info -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.about-book -->
-
-    <section class="recommendations">
-      <div class="container">
-        <div class="wrapper">
-          <div class="recommendations">
-            <h2 class="recommendations__title">Рекомендации</h2>
-            <div class="recommendations-wrp">
-              <div class="card recommendations__card">
-                <a href="#" class="card__link-img">
-                  <img
-                    src="img/book/book-1.jpg"
-                    alt="The World of Abstract Art"
-                    class="card__img"
-                  />
-                </a>
-                <div class="card__info">
-                  <h3 class="card__title">The World of Abstract Art</h3>
-                  <span class="card__text">Art & Design</span>
-                  <span class="card__price">$25.00</span>
-                  <div class="card__buttons">
-                    <button class="card__button">Купить</button>
-                    <button data-toggle="favorites" class="like card__like">
-                      <i class="fas fa-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.recommendations__card -->
-              <div class="card recommendations__card">
-                <a href="#" class="card__link-img">
-                  <img
-                    src="img/book/book-2.jpg"
-                    alt="Educated :
-a Memoir"
-                    class="card__img"
-                  />
-                </a>
-                <div class="card__info">
-                  <h3 class="card__title">Educated : a Memoir</h3>
-                  <span class="card__text">Education</span>
-                  <span class="card__price">$28.00</span>
-                  <div class="card__buttons">
-                    <button class="card__button">Купить</button>
-                    <button data-toggle="favorites" class="like card__like">
-                      <i class="fas fa-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.recommendations__card -->
-              <div class="card recommendations__card">
-                <a href="#" class="card__link-img">
-                  <img
-                    src="img/book/book-3.jpg"
-                    alt="The Blue Flowers Ray…"
-                    class="card__img"
-                  />
-                </a>
-                <div class="card__info">
-                  <h3 class="card__title">The Blue Flowers Ray…</h3>
-                  <span class="card__text">Novel</span>
-                  <span class="card__price">$19.50</span>
-                  <div class="card__buttons">
-                    <button class="card__button">Купить</button>
-                    <button data-toggle="favorites" class="like card__like">
-                      <i class="fas fa-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.recommendations__card -->
-              <div class="card recommendations__card">
-                <a href="#" class="card__link-img">
-                  <img
-                    src="img/book/book-4.jpg"
-                    alt="The Blue Flowers Ray…"
-                    class="card__img"
-                  />
-                </a>
-                <div class="card__info">
-                  <h3 class="card__title">There There : a Novel by TO</h3>
-                  <span class="card__text">Novel</span>
-                  <span class="card__price">$20.00</span>
-                  <div class="card__buttons">
-                    <button class="card__button">Купить</button>
-                    <button data-toggle="favorites" class="like card__like">
-                      <i class="fas fa-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.recommendations__card -->
-              <div class="card recommendations__card">
-                <a href="#" class="card__link-img">
-                  <img
-                    src="img/book/book-5.jpg"
-                    alt="The Blue Flowers Ray…"
-                    class="card__img"
-                  />
-                </a>
-                <div class="card__info">
-                  <h3 class="card__title">WMNDFL : The Inspiration</h3>
-                  <span class="card__text">Business</span>
-                  <span class="card__price">$23.00</span>
-                  <div class="card__buttons">
-                    <button class="card__button">Купить</button>
-                    <button data-toggle="favorites" class="like card__like">
-                      <i class="fas fa-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.recommendations__card -->
-              <div class="card recommendations__card">
-                <a href="#" class="card__link-img">
-                  <img
-                    src="img/book/book-6.jpg"
-                    alt="The Blue Flowers Ray…"
-                    class="card__img"
-                  />
-                </a>
-                <div class="card__info">
-                  <h3 class="card__title">Making Things Happen</h3>
-                  <span class="card__text">Motivation</span>
-                  <span class="card__price">$23.00</span>
-                  <div class="card__buttons">
-                    <button class="card__button">Купить</button>
-                    <button data-toggle="favorites" class="like card__like">
-                      <i class="fas fa-heart"></i>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.card__info -->
-              </div>
-              <!-- /.recommendations__card -->
-              <button class="recommendations__button">
-                Больше рекомендаций
+          <div class="header-left">
+            <nav class="nav">
+              <ul class="nav__list" id="nav">
+                <li class="nav__item">
+                  <a href="#books" class="nav__link">Рекомендации</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#books" class="nav__link">Книги</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#blog" class="nav__link">Блог</a>
+                </li>
+              </ul>
+            </nav>
+            <div>
+              <button data-toggle="modal" class="header-left__button">
+                Получить
               </button>
             </div>
           </div>
-          <!-- /.recommendations -->
-          <aside class="month-top">
-            <h2 class="month-top__title">Топ Месяца</h2>
-            <div class="month-wrapper">
-              <div class="month-top__card">
-                <a href="#" class="month-top__link-img">
+
+          <button class="menu-button header__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+        </div>
+        <!-- /.header-wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <main class="main">
+      <div class="container">
+        <div class="main-wrapper">
+          <div class="main__info">
+            <h1 class="main__title">
+              <span class="main__title main__title--yellow">Design Theory:</span
+              ><br />
+              <span class="main__title"
+                >The Psychology of <br />
+                Graphic Design Pricing</span
+              >
+            </h1>
+            <span class="main__description">КНИГА МИШЕЛЯ ЯНГА</span>
+            <p class="main__text">
+              Спустя 15 лет я управляю собственной студией, выполнив тысячи
+              проектов для крупных клиентов. Теперь я делюсь своими <br />
+              золотыми стратегиями ценообразования на творческую работу.
+            </p>
+            <div class="main__buttons button">
+              <a href="#" class="button__buy">КУПИТЬ СЕЙЧАС</a>
+              <a href="#" class="button__read">ЧИТАТЬ ДЕМО</a>
+            </div>
+          </div>
+          <!-- /.main__info -->
+          <div class="main__image">
+            <img src="img/book.png" alt="Изображение книги" class="main__img" />
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </main>
+    <!-- /.main -->
+
+    <section class="books" id="books">
+      <div class="container">
+        <div class="books-wrapper">
+          <div class="recommended">
+            <h2 class="recommended__title">Рекомендации</h2>
+            <div class="recommended__cards">
+              <div class="card card-1">
+                <div class="card__image">
                   <img
-                    src="img/book/top-1.jpg"
-                    alt="Sprint : Solve,
-Test in 5 Days"
-                    class="month-top__img"
+                    src="img/recommended-1.png"
+                    alt="Обложа книги"
+                    class="card__img"
                   />
-                </a>
-                <div class="month-top__info">
-                  <h3 class="month-top__subtitle">
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">The World of Abstract Art</h3>
+                  <span class="card__description">Art & Design</span>
+                  <span class="card__price">$25.00</span>
+                  <div class="card__buttons">
+                    <a href="#" class="card__buy">Купить</a>
+                    <svg class="card__like-1">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card 1-->
+              <div class="card card-2">
+                <div class="card__image">
+                  <img
+                    src="img/recommended-2.png"
+                    alt="Обложа книги"
+                    class="card__img"
+                  />
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">Educated : a&nbsp;Memoir</h3>
+                  <span class="card__description">Education</span>
+                  <span class="card__price">$28.00</span>
+                  <div class="card__buttons">
+                    <a href="#" class="card__buy">Купить</a>
+                    <svg class="card__like-2">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card 2-->
+              <div class="card card-3">
+                <div class="card__image">
+                  <img
+                    src="img/recommended-3.png"
+                    alt="Обложа книги"
+                    class="card__img"
+                  />
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">The Blue Flowers Ray…</h3>
+                  <span class="card__description">Novel</span>
+                  <span class="card__price">$19.50</span>
+                  <div class="card__buttons">
+                    <a href="#" class="card__buy">Купить</a>
+                    <svg class="card__like-3">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card 3-->
+              <div class="card card-4">
+                <div class="card__image">
+                  <img
+                    src="img/recommended-4.png"
+                    alt="Обложа книги"
+                    class="card__img"
+                  />
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">There There : a&nbsp;Novel by TO</h3>
+                  <span class="card__description">Novel</span>
+                  <span class="card__price">$20.00</span>
+                  <div class="card__buttons">
+                    <a href="#" class="card__buy">Купить</a>
+                    <svg class="card__like-4">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card 4-->
+              <div class="card card-5 card--mb">
+                <div class="card__image">
+                  <img
+                    src="img/recommended-5.png"
+                    alt="Обложа книги"
+                    class="card__img"
+                  />
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">WMNDFL : The&nbsp;Inspiration</h3>
+                  <span class="card__description">Business</span>
+                  <span class="card__price">$23.00</span>
+                  <div class="card__buttons">
+                    <a href="#" class="card__buy">Купить</a>
+                    <svg class="card__like-5">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card 5-->
+              <div class="card card-6 card--mb">
+                <div class="card__image">
+                  <img
+                    src="img/recommended-6.png"
+                    alt="Обложа книги"
+                    class="card__img"
+                  />
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">Making Things&nbsp;Happen</h3>
+                  <span class="card__description">Motivation</span>
+                  <span class="card__price">$23.00</span>
+                  <div class="card__buttons">
+                    <a href="#" class="card__buy">Купить</a>
+                    <svg class="card__like-6">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card 6-->
+            </div>
+            <!-- /.recommended__cards -->
+            <div class="recommended__button">
+              <a href="#" class="recommended__link">Больше рекомендаций</a>
+            </div>
+          </div>
+          <!-- /.recommended -->
+          <div class="best">
+            <h2 class="best__title">Топ Месяца</h2>
+            <div class="best__cards">
+              <div class="best-card">
+                <div class="best-card__image">
+                  <img
+                    src="img/best-1.png"
+                    alt="Обложа книги"
+                    class="best-card__img"
+                  />
+                </div>
+                <div class="best-card__info">
+                  <h3 class="best-card__title">
                     Sprint : Solve, Test in 5 Days
                   </h3>
-                  <span class="month-top__price">$23.00</span>
-                  <button class="month-top__button">Купить</button>
+                  <span class="best-card__price">$23.00</span>
+                  <a href="#" class="best-card__buy">Купить</a>
                 </div>
-                <!-- /.month-top__info -->
               </div>
-              <!-- /.month-top__card -->
-              <div class="month-top__card">
-                <a href="#" class="month-top__link-img">
+              <!-- /.best__card 1-->
+              <div class="best-card">
+                <div class="best-card__image">
                   <img
-                    src="img/book/top-2.jpg"
-                    alt="Hacking Growth
-Break Problem"
-                    class="month-top__img"
+                    src="img/best-2.png"
+                    alt="Обложа книги"
+                    class="best-card__img"
                   />
-                </a>
-                <div class="month-top__info">
-                  <h3 class="month-top__subtitle">
-                    Hacking Growth Break Problem
-                  </h3>
-                  <span class="month-top__price">$23.00</span>
-                  <button class="month-top__button">Купить</button>
                 </div>
-                <!-- /.month-top__info -->
-              </div>
-              <!-- /.month-top__card -->
-              <div class="month-top__card">
-                <a href="#" class="month-top__link-img">
-                  <img
-                    src="img/book/top-3.jpg"
-                    alt="Very Nice a
-Novel by Mercy"
-                    class="month-top__img"
-                  />
-                </a>
-                <div class="month-top__info">
-                  <h3 class="month-top__subtitle">
-                    Very Nice a Novel by Mercy
-                  </h3>
-                  <span class="month-top__price">$23.00</span>
-                  <button class="month-top__button">Купить</button>
+                <div class="best-card__info">
+                  <h3 class="best-card__title">Hacking Growth Break Problem</h3>
+                  <span class="best-card__price">$23.00</span>
+                  <a href="#" class="best-card__buy">Купить</a>
                 </div>
-                <!-- /.month-top__info -->
               </div>
-              <!-- /.month-top__card -->
-              <div class="month-top__card month-top__card">
-                <a href="#" class="month-top__link-img">
+              <!-- /.best__card 2-->
+              <div class="best-card">
+                <div class="best-card__image">
                   <img
-                    src="img/book/top-4.jpg"
-                    alt="Hooked : How to
-Build Products"
-                    class="month-top__img"
+                    src="img/best-3.png"
+                    alt="Обложа книги"
+                    class="best-card__img"
                   />
-                </a>
-                <div class="month-top__info">
-                  <h3 class="month-top__subtitle">
+                </div>
+                <div class="best-card__info">
+                  <h3 class="best-card__title">Very Nice a Novel by Mercy</h3>
+                  <span class="best-card__price">$23.00</span>
+                  <a href="#" class="best-card__buy">Купить</a>
+                </div>
+              </div>
+              <!-- /.best__card 3-->
+              <div class="best-card best-card--mb">
+                <div class="best-card__image">
+                  <img
+                    src="img/best-4.png"
+                    alt="Обложка книги"
+                    class="best-card__img"
+                  />
+                </div>
+                <div class="best-card__info">
+                  <h3 class="best-card__title">
                     Hooked : How to Build Products
                   </h3>
-                  <span class="month-top__price">$23.00</span>
-                  <button class="month-top__button">Купить</button>
+                  <span class="best-card__price">$23.00</span>
+                  <a href="#" class="best-card__buy">Купить</a>
                 </div>
-                <!-- /.month-top__info -->
               </div>
-              <!-- /.month-top__card -->
-              <div class="month-line"></div>
-              <button class="month-top__more">Лучшие книги</button>
+              <!-- /.best__card 4-->
+              <div class="line"></div>
+              <a href="#" class="best__link">ЛУЧШИЕ КНИГИ</a>
             </div>
-            <!-- /.month-wrapper -->
-          </aside>
-          <!-- /.month-top -->
+            <!-- /.best__cards -->
+          </div>
+          <!-- /.best -->
         </div>
-        <!-- /.wrapper -->
-
-        <div class="month-line"></div>
+        <!-- /.books-wrapper -->
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.recommendation -->
+    <!-- /.books -->
 
-    <div class="categories">
+    <section class="category">
       <div class="container">
-        <div class="swiper-container categories__container">
-          <div class="swiper-wrapper categories__wrapper">
-            <div class="swiper-slide categories__slide">
-              <div class="categories-card">
-                <img
-                  src="img/slider/logo-1.svg"
-                  alt="Logo"
-                  class="categories-image"
-                />
-                <h2 class="categories-title">Бизнес & Финансы</h2>
-                <span class="categories-subtitle">Книги про мир бизнеса</span>
-              </div>
-              <!-- /.categories-card -->
-              <div class="categories-card">
-                <img
-                  src="img/slider/logo-2.svg"
-                  alt="Logo"
-                  class="categories-image"
-                />
-                <h2 class="categories-title">Самомотиватия</h2>
-                <span class="categories-subtitle">Книги о мотивации</span>
-              </div>
-              <!-- /.categories-card -->
-              <div class="categories-card">
-                <img
-                  src="img/slider/logo-3.svg"
-                  alt="Logo"
-                  class="categories-image"
-                />
-                <h2 class="categories-title">Романы Теленовеллы</h2>
-                <span class="categories-subtitle"
-                  >Книги с крутыми историями</span
-                >
-              </div>
-              <!-- /.categories-card -->
-              <div class="categories-card">
-                <img
-                  src="img/slider/logo-4.svg"
-                  alt="Logo"
-                  class="categories-image"
-                />
-                <h2 class="categories-title">Навыки будущего</h2>
-                <span class="categories-subtitle"
-                  >Книги для самоподготовки
-                </span>
-              </div>
-              <!-- /.categories-card -->
+        <div class="category__line"></div>
+        <!-- Slider main container -->
+        <div class="swiper-container category__slider category__slider--mb">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide category-card category-card--mr">
+              <img src="img/category-1.png" alt="" class="category-card__img" />
+              <a href="#">
+                <h2 class="category-card__title">Бизнес & Финансы</h2>
+              </a>
+              <span class="category-card__description"
+                >Книги про мир бизнеса</span
+              >
+            </div>
+
+            <div class="swiper-slide category-card category-card--mr">
+              <img src="img/category-2.png" alt="" class="category-card__img" />
+              <a href="#">
+                <h2 class="category-card__title category-card__title--mb">
+                  Самомотиватия
+                </h2>
+              </a>
+              <span class="category-card__description">Книги о мотивации</span>
+            </div>
+
+            <div class="swiper-slide category-card category-card--mr">
+              <img src="img/category-3.png" alt="" class="category-card__img" />
+              <a href="#">
+                <h2 class="category-card__title">Романы Теленовеллы</h2>
+              </a>
+              <span class="category-card__description"
+                >Книги с крутыми историями</span
+              >
+            </div>
+
+            <div class="swiper-slide category-card">
+              <img src="img/category-4.png" alt="" class="category-card__img" />
+              <a href="#">
+                <h2 class="category-card__title">Навыки будущего</h2>
+              </a>
+              <span class="category-card__description"
+                >Книги для самоподготовки</span
+              >
+            </div>
+
+            <div class="swiper-slide category-card category-card--mr">
+              <img src="img/category-1.png" alt="" class="category-card__img" />
+              <a href="#">
+                <h2 class="category-card__title">Бизнес & Финансы</h2>
+              </a>
+              <span class="category-card__description"
+                >Книги про мир бизнеса</span
+              >
             </div>
           </div>
-          <!-- /.swiper-wrapper categories__wrapper -->
-          <div class="categories__button categories__button_prev">
-            <i class="fas fa-arrow-left"></i>
-          </div>
-          <div class="categories__button categories__button_next">
-            <i class="fas fa-arrow-right"></i>
-          </div>
         </div>
-        <!-- /.swiper-container categories__container -->
+
+        <!-- If we need navigation buttons -->
+        <div class="category-button-next">
+          <svg class="next-icon">
+            <use xlink:href="img/sprite.svg#category-next"></use>
+          </svg>
+        </div>
+        <div class="category-button-prev">
+          <svg class="prev-icon">
+            <use xlink:href="img/sprite.svg#category-prev"></use>
+          </svg>
+        </div>
       </div>
       <!-- /.container -->
-    </div>
-    <!-- /.categories -->
+    </section>
+    <!-- /.category -->
+
     <section class="unreleased">
       <div class="container">
         <h2 class="unreleased__title">Неизданные книги</h2>
-        <div class="swiper-container unreleased__container">
-          <div class="swiper-wrapper unreleased__wrapper">
-            <div class="swiper-slide unreleased__slide">
-              <a href="#" class="unreleased__link">
+
+        <div class="swiper-container unreleased__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide unreleased__card">
+              <div class="un-card">
                 <img
-                  src="img/unreleased/book-1.png"
-                  alt=""
+                  src="img/unreleased-1.png"
+                  alt="Обложка книги"
                   class="unreleased__img"
                 />
-              </a>
-              <a href="#" class="unreleased__link">
-                <img
-                  src="img/unreleased/book-2.png"
-                  alt=""
-                  class="unreleased__img"
-                />
-              </a>
-              <a href="#" class="unreleased__link">
-                <img
-                  src="img/unreleased/book-3.png"
-                  alt=""
-                  class="unreleased__img"
-                />
-              </a>
-              <a href="#" class="unreleased__link">
-                <img
-                  src="img/unreleased/book-4.png"
-                  alt=""
-                  class="unreleased__img"
-                />
-              </a>
-              <a href="#" class="unreleased__link">
-                <img
-                  src="img/unreleased/book-5.png"
-                  alt=""
-                  class="unreleased__img"
-                />
-              </a>
+              </div>
             </div>
-            <div class="unreleased__button unreleased__button_prev">
-              <img src="img/prev.svg" alt="prev" />
+            <div class="swiper-slide unreleased__card">
+              <div class="un-card">
+                <img
+                  src="img/unreleased-2.png"
+                  alt="Обложка книги"
+                  class="unreleased__img"
+                />
+              </div>
             </div>
-            <div class="unreleased__button unreleased__button_next">
-              <img src="img/next.svg" alt="next" />
+            <div class="swiper-slide unreleased__card">
+              <div class="un-card">
+                <img
+                  src="img/unreleased-3.png"
+                  alt="Обложка книги"
+                  class="unreleased__img"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide unreleased__card">
+              <div class="un-card">
+                <img
+                  src="img/unreleased-4.png"
+                  alt="Обложка книги"
+                  class="unreleased__img"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide unreleased__card">
+              <div class="un-card">
+                <img
+                  src="img/unreleased-5.png"
+                  alt="Обложка книги"
+                  class="unreleased__img"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide unreleased__card">
+              <div class="un-card">
+                <img
+                  src="img/unreleased-1.png"
+                  alt="Обложка книги"
+                  class="unreleased__img"
+                />
+              </div>
             </div>
           </div>
-          <!-- /.swiper-wrapper unreleased__wrapper -->
         </div>
-        <!-- /.swiper-container unreleased__container -->
+
+        <!-- If we need navigation buttons -->
+
+        <svg class="unreleased-button-prev">
+          <use xlink:href="img/sprite.svg#unreleased-prev"></use>
+        </svg>
+
+        <svg class="unreleased-button-next">
+          <use xlink:href="img/sprite.svg#unreleased-next"></use>
+        </svg>
       </div>
       <!-- /.container -->
     </section>
     <!-- /.unreleased -->
 
-    <section class="author">
-      <div class="author-container">
-        <div class="author__top">
-          <h2 class="author__title">История Автора</h2>
-          <p class="author__text">
-            Это раздел авторского рассказа. Каждую неделю мы стараемся
-            рассказать вам историю писателя. Расскажем всем о закулисье их книг.
-          </p>
-        </div>
-        <div class="author__videos">
-          <div class="author__box">
-            <div class="author__video author__video_1">
-              <a
-                class="video__play"
-                data-fancybox="gallery"
-                href="https://www.youtube.com/watch?v=Sr5-xMPtIfU"
-              >
-                <img src="img/author/video-1.jpg" alt="play icon"
-              /></a>
-            </div>
-            <!-- author__video -->
-          </div>
-          <!-- /.author__box -->
-          <div class="author__box">
-            <div class="author__video author__video_2">
-              <a
-                class="video__play"
-                data-fancybox="gallery"
-                href="https://www.youtube.com/watch?v=Z1OfXxH_uiw&t=117s"
-              >
-                <img src="img/author/video-2.jpg" alt="play icon"
-              /></a>
-            </div>
-            <!-- author__video -->
-            <div class="author__info">
-              <a href="#" class="author__link">
-                <h3 class="author__subtitle">Emelda Scandroot</h3>
-              </a>
-              <span class="author__desc">Author of Books Tittle</span>
-            </div>
-            <!-- /.author__info -->
-            <button class="bookmark author__bookmark">
-              <img src="img/author/bookmark.svg" alt="" />
-            </button>
-          </div>
-          <!-- /.author__box -->
-          <div class="author__box">
-            <div class="author__video author__video_3">
-              <a
-                class="video__play"
-                data-fancybox="gallery"
-                href="https://www.youtube.com/watch?v=9-cv_kL1NTs"
-              >
-                <img src="img/author/video-3.jpg" alt="play icon"
-              /></a>
-            </div>
-            <!-- author__video -->
-            <div class="author__info">
-              <a href="#" class="author__link">
-                <h3 class="author__subtitle">Mar Rueda</h3>
-              </a>
-              <span class="author__desc">Author of Books Tittle</span>
-            </div>
-            <!-- /.author__info -->
-            <button class="bookmark author__bookmark">
-              <img src="img/author/bookmark.svg" alt="" />
-            </button>
-          </div>
-          <!-- /.author__box -->
-          <div class="author__box">
-            <div class="author__video author__video_4">
-              <a
-                class="video__play"
-                data-fancybox="gallery"
-                href="https://www.youtube.com/watch?v=yddFxeeAhVQ"
-              >
-                <img src="img/author/video-4.jpg" alt="play icon"
-              /></a>
-            </div>
-            <!-- author__video -->
-            <div class="author__info">
-              <a href="#" class="author__link">
-                <h3 class="author__subtitle">Nembo Lukeni</h3>
-              </a>
-              <span class="author__desc">Author of Books Tittle</span>
-            </div>
-            <!-- /.author__info -->
-            <button class="bookmark author__bookmark">
-              <img src="img/author/bookmark.svg" alt="" />
-            </button>
-          </div>
-          <!-- /.author__box -->
-        </div>
-        <!-- /.author__videos -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.author -->
-
-    <section class="clients">
-      <div class="container">
-        <h3 class="clients__title">
-          Некоторые из издателей, с которыми мы сотрудничали
-        </h3>
-        <div class="clients-wrp">
-          <a
-            href="https://slack.com/intl/en-ru/"
-            class="clients__item"
-            target="_blank"
-          >
-            <img src="img/clients/slack.svg" alt="slack" /></a
-          ><a
-            href="https://www.netflix.com/ru/"
-            class="clients__item"
-            target="_blank"
-          >
-            <img src="img/clients/netflix.svg" alt="netflix" /></a
-          ><a
-            href="https://www.fitbit.com/global/us/home"
-            class="clients__item"
-            target="_blank"
-          >
-            <img src="img/clients/fitbit.svg" alt="fitbit" /></a
-          ><a
-            href="https://www.google.ru/"
-            class="clients__item"
-            target="_blank"
-          >
-            <img src="img/clients/google.svg" alt="google" /></a
-          ><a
-            href="https://www.airbnb.ru/"
-            class="clients__item"
-            target="_blank"
-          >
-            <img src="img/clients/airbnb.svg" alt="airbnb" /></a
-          ><a
-            href="https://support-uber.com/"
-            class="clients__item"
-            target="_blank"
-          >
-            <img src="img/clients/uber.svg" alt="uber" /></a
-          ><a
-            href="https://www.netflix.com/ru/"
-            class="clients__item"
-            target="_blank"
-          >
-            <img src="img/clients/netflix.svg" alt="netflix" /></a
-          ><a
-            href="https://www.airbnb.ru/"
-            class="clients__item"
-            target="_blank"
-          >
-            <img src="img/clients/airbnb.svg" alt="airbnb" /></a
-          ><a
-            href="https://slack.com/intl/en-ru/"
-            class="clients__item"
-            target="_blank"
-          >
-            <img src="img/clients/slack.svg" alt="slack" /></a
-          ><a
-            href="https://support-uber.com/"
-            class="clients__item"
-            target="_blank"
-          >
-            <img src="img/clients/uber.svg" alt="" /></a
-          ><a
-            href="https://www.fitbit.com/global/us/home"
-            class="clients__item"
-            target="_blank"
-          >
-            <img src="img/clients/fitbit.svg" alt="fitbit" /></a
-          ><a
-            href="https://www.google.ru/"
-            class="clients__item"
-            target="_blank"
-          >
-            <img src="img/clients/google.svg" alt="google" />
-          </a>
-        </div>
-        <!-- /.clients-wrp -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.clients -->
-
-    <section class="blog">
-      <div class="container">
-        <div class="blog__top">
-          <h2 class="blog__title">Ehya Блог</h2>
-          <button class="blog__button">Все Блоги</button>
-        </div>
-        <!-- /.blog__top -->
-        <div class="blog-wrp">
-          <div class="blog__item">
-            <div class="blog__pic">
-              <img src="img/blog/pic-1.jpg" alt="pic-1" class="blog__img" />
-            </div>
-            <a href="#" class="blog__link-subtitle">
-              <h3 class="blog__title-1">
-                Success Steps For Your Business Life
-              </h3>
-            </a>
-            <p class="blog__text">
-              This is the author story section. Every week we try to give you
-              the story of book writer. Tell all of you the behind the scene of
-              their books.
+    <div class="story">
+      <div class="container container--story">
+        <div class="story-wrapper">
+          <div class="story__info">
+            <h2 class="story__title">История Автора</h2>
+            <p class="story__description">
+              Это раздел авторского рассказа. Каждую неделю мы стараемся
+              рассказать вам историю писателя. Расскажем всем о&nbsp;закулисье
+              их книг.
             </p>
           </div>
-          <!-- /.blog__item -->
-          <div class="blog__item">
-            <div class="blog__pic">
-              <img src="img/blog/pic-2.jpg" alt="pic-2" class="blog__img" />
-            </div>
-            <div class="blog__info">
-              <span class="blog__time">23 МАРТА 2020</span>
-              <a href="#" class="blog__link-subtitle">
-                <h3 class="blog__subtitle">
-                  29 Motivational Quotes <br />
-                  for Work Environments
-                </h3>
+          <div class="story__video video">
+            <img src="img/story-1.png" alt="" class="video__img" />
+            <div class="video__play">
+              <a
+                data-fancybox
+                href="https://www.youtube.com/watch?v=HmFg1vy2Cf0"
+              >
+                <svg class="video__play-icon">
+                  <use xlink:href="img/sprite.svg#play"></use>
+                </svg>
               </a>
-              <a href="#" class="blog__link">Читать</a>
             </div>
-            <!-- /.blog__info -->
           </div>
-          <!-- /.blog__item -->
-          <div class="blog__item">
-            <div class="blog__pic">
-              <img src="img/blog/pic-3.jpg" alt="pic-3" class="blog__img" />
+          <div class="story__video-list video-list">
+            <div class="video-list__card">
+              <div class="video-list__image">
+                <img src="img/story-2.png" alt="" class="video-list__img" />
+                <a
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=0Go9zH8SuFo"
+                >
+                  <svg class="video-list__play-icon">
+                    <use xlink:href="img/sprite.svg#play"></use>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="video-list__tit">
+                <div>
+                  <h3 class="video-list__title">Emelda Scandroot</h3>
+                  <span class="video-list__description"
+                    >Author of Books Tittle</span
+                  >
+                </div>
+                <svg class="video-list__icon">
+                  <use xlink:href="img/sprite.svg#story-icon"></use>
+                </svg>
+              </div>
             </div>
-            <div class="blog__info">
-              <span class="blog__time">28 МАРТА 2020</span>
-              <a href="#" class="blog__link-subtitle">
-                <h3 class="blog__subtitle">
-                  Learn To Love Growth <br />
-                  and You Will Be A Success
-                </h3>
-              </a>
-              <a href="#" class="blog__link">Читать</a>
+            <div class="video-list__card">
+              <div class="video-list__image">
+                <img src="img/story-3.png" alt="" class="video-list__img" />
+                <a
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=R1OvwseHl6U"
+                >
+                  <svg class="video-list__play-icon">
+                    <use xlink:href="img/sprite.svg#play"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="video-list__tit">
+                <div>
+                  <h3 class="video-list__title">Mar Rueda</h3>
+                  <span class="video-list__description"
+                    >Author of Books Tittle</span
+                  >
+                </div>
+                <svg class="video-list__icon">
+                  <use xlink:href="img/sprite.svg#story-icon"></use>
+                </svg>
+              </div>
             </div>
-            <!-- /.blog__info -->
+
+            <div class="video-list__card video-list__card--hidden">
+              <div class="video-list__image">
+                <img src="img/story-4.png" alt="" class="video-list__img" />
+                <a
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=egUjOwktfs0"
+                >
+                  <svg class="video-list__play-icon">
+                    <use xlink:href="img/sprite.svg#play"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="video-list__tit">
+                <div>
+                  <h3 class="video-list__title">Nembo Lukeni</h3>
+                  <span class="video-list__description"
+                    >Author of Books Tittle</span
+                  >
+                </div>
+                <svg class="video-list__icon">
+                  <use xlink:href="img/sprite.svg#story-icon"></use>
+                </svg>
+              </div>
+            </div>
           </div>
-          <!-- /.blog__item -->
-          <div class="blog__item">
-            <div class="blog__pic">
-              <img src="img/blog/pic-4.jpg" alt="pic-4" class="blog__img" />
-            </div>
-            <div class="blog__info">
-              <span class="blog__time">28 МАРТА 2020</span>
-              <a href="#" class="blog__link-subtitle">
-                <h3 class="blog__subtitle">
-                  Motivation How To Build <br />
-                  Trust at your Work
-                </h3>
-              </a>
-              <a href="#" class="blog__link">Читать</a>
-            </div>
-            <!-- /.blog__info -->
-          </div>
-          <!-- /.blog__item -->
         </div>
-        <!-- /.blog-wrp -->
-        <button class="blog__button blog__button_mobile">Все блоги</button>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.story -->
+
+    <section class="partners">
+      <div class="container">
+        <h2 class="partners__title">
+          Некоторые из издателей, с&nbsp;которыми мы сотрудничали
+        </h2>
+        <div class="partners__list">
+          <svg class="partners__icon partners__icon--mb-1">
+            <use xlink:href="img/sprite.svg#partners-1"></use>
+          </svg>
+          <svg class="partners__icon partners__icon--ml partners__icon--mb-1">
+            <use xlink:href="img/sprite.svg#partners-2"></use>
+          </svg>
+          <svg class="partners__icon partners__icon--mb-1">
+            <use xlink:href="img/sprite.svg#partners-3"></use>
+          </svg>
+          <svg class="partners__icon partners__icon--ml">
+            <use xlink:href="img/sprite.svg#partners-4"></use>
+          </svg>
+          <svg class="partners__icon">
+            <use xlink:href="img/sprite.svg#partners-5"></use>
+          </svg>
+          <svg class="partners__icon partners__icon--ml">
+            <use xlink:href="img/sprite.svg#partners-6"></use>
+          </svg>
+        </div>
+        <div class="partners__list partners__list--hidden">
+          <svg class="partners__icon">
+            <use xlink:href="img/sprite.svg#partners-2"></use>
+          </svg>
+          <svg class="partners__icon">
+            <use xlink:href="img/sprite.svg#partners-5"></use>
+          </svg>
+          <svg class="partners__icon">
+            <use xlink:href="img/sprite.svg#partners-1"></use>
+          </svg>
+          <svg class="partners__icon">
+            <use xlink:href="img/sprite.svg#partners-6"></use>
+          </svg>
+          <svg class="partners__icon">
+            <use xlink:href="img/sprite.svg#partners-3"></use>
+          </svg>
+          <svg class="partners__icon">
+            <use xlink:href="img/sprite.svg#partners-4"></use>
+          </svg>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.partners -->
+
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="blog-wrapper">
+          <h2 class="blog__title">Ehya Блог</h2>
+          <a href="#" class="blog__link">Все Блоги</a>
+          <div class="blog__articles">
+            <div class="blog__article article">
+              <div class="article__image">
+                <img src="img/blog-1.png" alt="" class="article__img" />
+              </div>
+              <a href="#" class="article__title"
+                >Success Steps For Your Business Life</a
+              >
+              <p class="article__text">
+                This is the author story section. Every week we try to give you
+                the story of book writer. Tell all of you the behind the scene
+                of their books.
+              </p>
+            </div>
+            <div class="blog__cards">
+              <div class="blog-card">
+                <div class="blog-card__image">
+                  <img src="img/blog-2.png" alt="" class="blog-card__img" />
+                </div>
+                <div class="blog-card__info">
+                  <span class="blog-card__date">23 МАРТА 2020</span>
+                  <span class="blog-card__text"
+                    >29 Motivational Quotes for Work Environments</span
+                  >
+                  <a href="#" class="blog-card__link">ЧИТАТЬ</a>
+                </div>
+              </div>
+              <div class="blog-card">
+                <div class="blog-card__image">
+                  <img src="img/blog-3.png" alt="" class="blog-card__img" />
+                </div>
+                <div class="blog-card__info">
+                  <span class="blog-card__date">28 МАРТА 2020</span>
+                  <span class="blog-card__text blog-card__text--pr"
+                    >Learn To Love Growth <br />
+                    and&nbsp;You&nbsp;Will&nbsp;Be&nbsp;A&nbsp;Success</span
+                  >
+                  <a href="#" class="blog-card__link">ЧИТАТЬ</a>
+                </div>
+              </div>
+              <div class="blog-card">
+                <div class="blog-card__image">
+                  <img src="img/blog-4.png" alt="" class="blog-card__img" />
+                </div>
+                <div class="blog-card__info">
+                  <span class="blog-card__date">28 МАРТА 2020</span>
+                  <span class="blog-card__text"
+                    >Motivation How To Build Trust at your Work</span
+                  >
+                  <a href="#" class="blog-card__link">ЧИТАТЬ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- /.container -->
     </section>
     <!-- /.blog -->
 
     <section class="subscribe">
-      <div class="subscribe-container">
-        <div class="subscribe-wrp">
+      <div class="container">
+        <div class="subscribe-wrapper">
           <h2 class="subscribe__title">
             Будь первым, кто узнает о&nbsp;наших акциях
           </h2>
-          <form
-            action="send.php"
-            class="form subscribe__form"
-            method="POST"
-            novalidate="novalidate"
-          >
+          <form action="send.php" method="POST" class="subscribe__form form">
+            <svg class="subscribe__icon">
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
             <input
-              type="text"
-              class="input subscribe__input invalid"
+              type="email"
               name="email"
-              placeholder="Ваш Email"
+              class="subscribe__input"
+              placeholder="Ваш Emaill"
               required
-              aria-invalid="true"
             />
-            <img src="img/mail.svg" alt="Icon: mail" class="subscribe__icon" />
             <button class="subscribe__button">Регистрация</button>
           </form>
         </div>
-        <!-- /.subscribe-wrp -->
       </div>
-      <!-- /.subscribe-container -->
+      <!-- /.container -->
     </section>
-    <!-- /.subscribe -->
+    <!-- /.subscript -->
 
-    <footer class="footer">
+    <section class="footer">
       <div class="container">
-        <div class="footer-wrp">
-          <a href="index.html" class="logo footer__logo">
-            <img src="img/Logo.svg" alt="Icon: logo" class="logo__img" />
-          </a>
-          <p class="footer__text">
-            Создайте современный и креативный веб-сайт с crealand
-          </p>
-          <div class="footer__socials">
-            <a
-              href="https://www.google.ru/"
-              class="social footer__social"
-              target="_blank"
-            >
-              <img
-                src="img/footer/google.svg"
-                alt="Google"
-                class="footer__icon" /></a
-            ><a
-              href="https://twitter.com/"
-              class="social footer__social"
-              target="_blank"
-            >
-              <img
-                src="img/footer/twitter.svg"
-                alt="twitter"
-                class="footer__icon" /></a
-            ><a
-              href="https://www.instagram.com/"
-              class="social footer__social"
-              target="_blank"
-            >
-              <img
-                src="img/footer/instagram.svg"
-                alt="Instagram"
-                class="footer__icon" /></a
-            ><a
-              href="https://www.linkedin.com/"
-              class="social footer__social"
-              target="_blank"
-            >
-              <img src="img/footer/in.svg" alt="linkedin" class="footer__icon"
+        <div class="footer-wrapper">
+          <div class="footer__info">
+            <a href="#"
+              ><img src="img/logo.png" alt="" class="footer__logo"
             /></a>
+            <span class="footer__description"
+              >Создайте современный и креативный&nbsp;веб-сайт с crealand</span
+            >
+            <div class="footer__icons">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#google"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon footer__icon--mr">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#inst"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
+              </a>
+            </div>
           </div>
-          <!-- /.footer__socials -->
-          <div class="footer__menu footer__product">
-            <h4 class="footer__subtitle">Продукт</h4>
-            <ul class="footer__list">
+
+          <div class="footer__list footer__list--mar">
+            <h3 class="footer__title">Продукт</h3>
+            <ul class="footer__ul">
               <li class="footer__item">
-                <a href="#" class="footer__link">Лэндинг</a>
+                <a href="#" class="footer__link">Лэндинг </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Функции</a>
+                <a href="#" class="footer__link">Функции </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Документация</a>
+                <a href="#" class="footer__link">Документация </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Скидки</a>
+                <a href="#" class="footer__link">Скидки </a>
               </li>
               <li class="footer__item">
                 <a href="#" class="footer__link">Расценки</a>
               </li>
             </ul>
           </div>
-          <!-- /.footer__menu footer__product -->
+          <!-- /.footer-list -->
 
-          <div class="footer__menu footer__services">
-            <h4 class="footer__subtitle">Сервисы</h4>
-            <ul class="footer__list">
+          <div class="footer__list">
+            <h3 class="footer__title">Сервисы</h3>
+            <ul class="footer__ul">
               <li class="footer__item">
-                <a href="#" class="footer__link">Документация</a>
+                <a href="#" class="footer__link">Документация </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Дизайн</a>
+                <a href="#" class="footer__link">Дизайн </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Темы</a>
+                <a href="#" class="footer__link">Темы </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Илюстрации</a>
+                <a href="#" class="footer__link">Илюстрации </a>
               </li>
               <li class="footer__item">
                 <a href="#" class="footer__link">UI Kit</a>
               </li>
             </ul>
           </div>
-          <!-- /.footer__menu footer__product -->
+          <!-- /.footer-list -->
 
-          <div class="footer__menu footer__company">
-            <h4 class="footer__subtitle">Компания</h4>
-            <ul class="footer__list">
+          <div class="footer__list footer__list--mar-2">
+            <h3 class="footer__title">Компания</h3>
+            <ul class="footer__ul footer__ul--mr">
               <li class="footer__item">
-                <a href="#" class="footer__link">О нас</a>
+                <a href="#" class="footer__link">О нас </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Условия</a>
+                <a href="#" class="footer__link">Условия </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Privacy Policy</a>
+                <a href="#" class="footer__link">Privacy Policy </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Careers</a>
+                <a href="#" class="footer__link">Careers </a>
               </li>
             </ul>
           </div>
-          <!-- /.footer__menu footer__product -->
+          <!-- /.footer-list -->
 
-          <div class="footer__menu footer__more">
-            <h4 class="footer__subtitle">Еще..</h4>
-            <ul class="footer__list">
+          <div class="footer__list">
+            <h3 class="footer__title">Еще..</h3>
+            <ul class="footer__ul">
               <li class="footer__item">
-                <a href="#" class="footer__link">Документация</a>
+                <a href="#" class="footer__link">Документация </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Лицензия</a>
+                <a href="#" class="footer__link">Лицензия </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Изменения</a>
+                <a href="#" class="footer__link">Изменения </a>
               </li>
             </ul>
           </div>
-          <!-- /.footer__menu footer__product -->
-
-          <div class="footer__credits">
-            <a href="#" class="footer__heart">
-              <img src="img/footer/heart.svg" alt="Icon: heart" />
-            </a>
-            <span class="footer__copyright"
-              >Copyright © 2019. Crafted with love.</span
-            >
-          </div>
-          <!-- /.footer__credits -->
+          <!-- /.footer-list -->
         </div>
-        <!-- /.footer-wrp -->
+        <!-- /.footer-wrapper -->
+        <div class="footer__bottom">
+          <img src="img/footer-heart.png" alt="" class="footer__heart" />
+          <span class="footer__copy">Copyright © 2019. Crafted with love.</span>
+        </div>
+        <!-- /.footer__bottom -->
       </div>
       <!-- /.container -->
-    </footer>
+    </section>
     <!-- /.footer -->
-    <script src="https://use.fontawesome.com/e3087e072a.js"></script>
-    <script
-      src="https://kit.fontawesome.com/08a673d80a.js"
-      crossorigin="anonymous"
-    ></script>
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <svg class="modal__close">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+        <form action="send.php" method="POST" class="modal__form form-1">
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Ваше имя*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="modal__input phone"
+            placeholder="Телефон*"
+            name="phone"
+            required
+            minlength="17"
+          />
+          <input
+            type="email"
+            class="modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <button class="modal__button" type="submit">Получить</button>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

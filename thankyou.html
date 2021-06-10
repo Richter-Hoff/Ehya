@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ehya - Книги</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header header--mobile">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Логотип: ehya" class="header__logo" />
+          </a>
+          <div class="header-left">
+            <nav class="nav">
+              <ul class="nav__list" id="header">
+                <li class="nav__item">
+                  <a href="#books" class="nav__link">Рекомендации</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#books" class="nav__link">Книги</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#blog" class="nav__link">Блог</a>
+                </li>
+              </ul>
+            </nav>
+            <div>
+              <button data-toggle="modal" class="header-left__button">
+                Получить
+              </button>
+            </div>
+          </div>
+
+          <button class="menu-button header__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+        </div>
+        <!-- /.header-wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <div class="container">
+      <h2 class="thankyou-title">Сообщение отправлено!</h2>
+      <a href="index.html" class="thankyou-button">На главную</a>
+    </div>
+
+    <section class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer__info">
+            <a href="index.html"
+              ><img src="img/logo.png" alt="" class="footer__logo"
+            /></a>
+            <span class="footer__description"
+              >Создайте современный и креативный&nbsp;веб-сайт с crealand</span
+            >
+            <div class="footer__icons">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#google"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon footer__icon--mr">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#inst"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="footer__icon">
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__list footer__list--mar">
+            <h3 class="footer__title">Продукт</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Лэндинг </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Функции </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Документация </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Скидки </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Расценки</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-list -->
+
+          <div class="footer__list">
+            <h3 class="footer__title">Сервисы</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Документация </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Дизайн </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Темы </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Илюстрации </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">UI Kit</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-list -->
+
+          <div class="footer__list footer__list--mar-2">
+            <h3 class="footer__title">Компания</h3>
+            <ul class="footer__ul footer__ul--mr">
+              <li class="footer__item">
+                <a href="#" class="footer__link">О нас </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Условия </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Careers </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-list -->
+
+          <div class="footer__list">
+            <h3 class="footer__title">Еще..</h3>
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Документация </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Лицензия </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Изменения </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer-list -->
+        </div>
+        <!-- /.footer-wrapper -->
+        <div class="footer__bottom">
+          <img src="img/footer-heart.png" alt="" class="footer__heart" />
+          <span class="footer__copy">Copyright © 2019. Crafted with love.</span>
+        </div>
+        <!-- /.footer__bottom -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.footer -->
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

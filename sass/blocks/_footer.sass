@@ -1,73 +1,59 @@
 .footer
-  padding: 108px 0 80px 0
-  &-wrp
-    display: grid
-    grid-template-columns: 263px repeat(4, 165px)
-    grid-template-rows: 28px 54px 40px
-    grid-gap: 30px
+  padding-top: 106px
+  padding-bottom: 0
+  &-wrapper
+    display: flex
+    margin-bottom: 73px
+  &__info
+    margin-right: 52px
   &__logo
-    grid-row: 1 / 2
-    grid-column: 1 / 2
-  &__text
-    grid-row: 2 / 3
-    grid-column: 1 / 2
-    color: $text-color
+    margin-bottom: 25px
+  &__description
+    display: block
+    font-weight: normal
     font-size: 15px
     line-height: 28px
-    padding: 0
-    margin: -3px 0 0 0
-  &__socials
-    grid-row: 3 / 4
-    grid-column: 1 / 2
-  &__social
-    font-size: 16px
-    line-height: 18px
-    padding: 11px 12px
-    background-color: rgba(179,186,197,0.1)
-    border-radius: 50%
-    display: inline-block
-    &:not(:last-child)
-      margin-right: 6px
-  &__product
-    grid-row: 1 / 4
-    grid-column: 2 / 3
-  &__subtitle
+    color: #5A7184
+    margin-bottom: 29px
+    max-width: 240px
+  &__social-link
+    text-decoration: none
+  &__icon
+    fill: #5A7184
+    width: 42px
+    height: 40px
+    &--mr
+      margin-right: 4px
+  &__title
+    font-weight: bold
     font-size: 18px
     line-height: 25px
-    font-weight: 700
-    color: $blue
-    margin: 0 0 30px 0
-  &__list
+    margin-top: 0
+    margin-bottom: 31px
+  &__ul
     list-style: none
     padding: 0
-    margin: 0
+    margin-right: 81px
+    margin-top: 0
+    margin-bottom: 0
+    &--mr
+      margin-right: 96px
   &__item
+    font-weight: normal
     font-size: 16px
     line-height: 22px
-    color: $blue
-    &:not(:last-child)
-      margin-bottom: 24px
+    margin-bottom: 24px
   &__link
     text-decoration: none
     color: inherit
-  &__credits
-    margin-top: 240px
+  &__bottom
+    display: flex
+    align-items: center
+    flex-direction: column
   &__heart
+    margin-bottom: 24px
+  &__copy
     display: block
-    max-width: 56px
-    min-height: 56px
-    text-align: center
-    margin: 0 auto
-    background-color: $button
-    border-radius: 50%
-    padding: 15px
-  &__copyright
-    width: 279px
-    font-weight: 600
     font-size: 16px
     line-height: 22px
-    display: block
-    margin-top: 24px
-    margin-left: -40px
     text-align: center
-    color: $text-color

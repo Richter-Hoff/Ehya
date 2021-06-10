@@ -1,88 +1,54 @@
 .subscribe
-  position: relative
-  overflow: hidden
-  &::before
-    content: ''
-    display: block
-    position: absolute
-    top: -980px
-    left: -410px
-    z-index: 1
-    width: 1186px
-    height: 1186px
-    background-image: url(../img/Oval.png)
-    background-position: center center
+  &-wrapper
+    display: flex
+    background-image: url('../img/subscript-bg.png')
     background-repeat: no-repeat
+    background-position: center
     background-size: cover
-    z-index: 99
-  &-container
-    max-width: 1140px
-    height: 236px
-    margin: 0 auto
-    background-color: $button
     border-radius: 12px
     padding: 60px 63px 80px 60px
-    overflow: hidden
-  &-wrp
-    display: flex
-    align-items: center
-    justify-content: space-between
-    &::after
-      content: ''
-      display: block
-      position: absolute
-      bottom: -893px
-      right: -373px
-      z-index: 2
-      width: 1186px
-      height: 1186px
-      background-image: url(../img/Oval.png)
-      background-position: center center
-      background-repeat: no-repeat
-      background-size: cover
   &__title
-    width: 393px
-    font-family: Roboto Condensed
+    font-family: 'Roboto Condensed', sans-serif
+    font-weight: bold
     font-size: 36px
-    font-style: normal
-    font-weight: 700
     line-height: 48px
-    color: $light
+    letter-spacing: 0.2px
+    color: #FFFFFF
+    margin: 0 177px 0 0
+  &__form
+    position: relative
+    background-color: #ffffff
+    border-radius: 8px
+    padding: 4px 4px 4px 20px
+    min-width: 447px
+    height: 56px
+    margin-top: 30px
+  &__input
+    border: none
+    outline: none
+    width: 255px
+    height: 100%
+    padding-left: 28px
+
   &__icon
-    left: 20px
+    position: absolute
     top: 18px
+    left: 20px
+    fill: #183B56
     width: 16px
     height: 18px
-    position: absolute
-.subscribe
-  &__form
-    z-index: 3
-    position: relative
-    margin-top: 15px
+
   &__button
     position: absolute
-    overflow: visible
-    right: 5px
     top: 4px
-    background-color: #FAAD13
-    border-radius: 4px
+    right: 4px
     border: none
-    color: $light
+    background: #FAAD13
+    border-radius: 4px
+    font-weight: bold
+    font-size: 16px
     line-height: 22px
-    font-weight: 700
+    text-align: center
+    color: #FFFFFF
     padding: 13px 28px
     cursor: pointer
-.input
-  padding: 10px 49px
-  background-color: $light
-  border-radius: 8px
-  border: 1px solid #959EAD
-  position: relative
-  min-width: 447px
-  min-height: 56px
-  outline: none
-  font-size: 16px
-  line-height: 22px
-  color: $blue
-  font-weight: 600
-  overflow: visible
